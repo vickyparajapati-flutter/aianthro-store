@@ -1,12 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
   <defs>
-    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6366f1" />
-      <stop offset="50%" stop-color="#818cf8" />
+    <!-- Background Glass-Gradient -->
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#6366f1" />
       <stop offset="100%" stop-color="#06b6d4" />
     </linearGradient>
+
+    <!-- Metallic Shield Overlay -->
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#e0e7ff" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- AI Sparkle Glow -->
+    <radialGradient id="sparkleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="1" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
   </defs>
-  <rect width="64" height="64" rx="16" fill="url(#logoGrad)" />
-  <path d="M20 44V24L32 16L44 24V44M20 28L32 36L44 28" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <circle cx="32" cy="25" r="3" fill="#ffffff" />
+
+  <!-- Container Box -->
+  <rect width="120" height="120" rx="30" fill="url(#bgGlow)" />
+  <rect width="116" height="116" x="2" y="2" rx="28" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.3" />
+
+  <!-- Abstract Dynamic "A" + Hexagonal Prism Store Badge -->
+  <!-- Left Wing of A -->
+  <path d="M60 22 L28 84 C26 88 29 93 34 93 L44 93 C47 93 49 91 51 88 L60 70 L69 88 C71 91 73 93 76 93 L86 93 C91 93 94 88 92 84 Z" fill="url(#shieldGrad)" />
+  
+  <!-- Cyber Core Node (Store Shopping Bag Overlay) -->
+  <path d="M42 56 L60 44 L78 56 L78 78 C78 81 75 84 72 84 L48 84 C45 84 42 81 42 78 Z" fill="#0f172a" opacity="0.9" />
+
+  <!-- Bag Handles / Quantum Arc -->
+  <path d="M52 46 C52 39 68 39 68 46" fill="none" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round" />
+
+  <!-- AI Anthro Energy Core Star -->
+  <polygon points="60,54 62,60 68,60 63,64 65,70 60,66 55,70 57,64 52,60 58,60" fill="#38bdf8" />
+  <circle cx="60" cy="62" r="14" fill="url(#sparkleGlow)" opacity="0.6" />
 </svg>

@@ -19,6 +19,8 @@ import {
 } from "lucide-react";
 import { RegistrationModal } from "./RegistrationModal";
 
+import { AIAnthroLogo } from "./AIAnthroLogo";
+
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -62,33 +64,21 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* AIAnthro Store Logo */}
-            <a href="#" className="flex items-center gap-2.5 group shrink-0">
-              <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-indigo-500 via-indigo-600 to-cyan-500 flex items-center justify-center shadow-lg shadow-indigo-500/25 group-hover:scale-105 transition-transform duration-300">
-                <Store className="w-5 h-5 text-white" />
-              </div>
-              <div className="flex flex-col">
-                <div className="flex items-center gap-1.5">
-                  <span className="text-lg sm:text-xl font-bold tracking-tight text-white font-sans">
-                    AIAnthro <span className="text-indigo-400">Store</span>
-                  </span>
-                  <span className="hidden sm:inline-block text-[10px] font-semibold tracking-wide uppercase px-1.5 py-0.5 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
-                    SaaS Engine
-                  </span>
-                </div>
-              </div>
+            <a href="#">
+              <AIAnthroLogo size="md" />
             </a>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center gap-1">
+            <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
               <div
                 className="relative"
                 onMouseEnter={() => setActiveDropdown("product")}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className="flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-slate-300 hover:text-white rounded-lg hover:bg-white/5 transition-colors">
+                <button className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-slate-300 hover:text-white rounded-lg hover:bg-white/5 transition-colors whitespace-nowrap">
                   Product
                   <ChevronDown
-                    className={`w-4 h-4 transition-transform duration-200 ${
+                    className={`w-3.5 h-3.5 transition-transform duration-200 ${
                       activeDropdown === "product" ? "rotate-180 text-indigo-400" : "text-slate-400"
                     }`}
                   />
@@ -130,43 +120,43 @@ export function Navbar() {
 
               <a
                 href="#features"
-                className="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white rounded-lg hover:bg-white/5 transition-colors"
+                className="px-3 py-2 text-sm font-medium text-slate-300 hover:text-white rounded-lg hover:bg-white/5 transition-colors whitespace-nowrap"
               >
                 Features
               </a>
               <a
                 href="#pricing"
-                className="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white rounded-lg hover:bg-white/5 transition-colors"
+                className="px-3 py-2 text-sm font-medium text-slate-300 hover:text-white rounded-lg hover:bg-white/5 transition-colors whitespace-nowrap"
               >
                 Pricing
               </a>
               <a
                 href="/store"
-                className="px-4 py-2 text-sm font-medium text-emerald-400 hover:text-emerald-300 rounded-lg hover:bg-emerald-500/10 border border-emerald-500/20 transition-colors flex items-center gap-1"
+                className="px-3 py-2 text-sm font-medium text-emerald-400 hover:text-emerald-300 rounded-lg hover:bg-emerald-500/10 border border-emerald-500/20 transition-colors flex items-center gap-1.5 whitespace-nowrap"
               >
-                <ShoppingBag className="w-3.5 h-3.5 text-emerald-400" />
-                <span>Live Customer Storefront</span>
+                <ShoppingBag className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                <span>Storefront Demo</span>
               </a>
               <a
                 href="/admin"
-                className="px-4 py-2 text-sm font-medium text-indigo-400 hover:text-indigo-300 rounded-lg hover:bg-indigo-500/10 border border-indigo-500/20 transition-colors flex items-center gap-1"
+                className="px-3 py-2 text-sm font-medium text-indigo-400 hover:text-indigo-300 rounded-lg hover:bg-indigo-500/10 border border-indigo-500/20 transition-colors flex items-center gap-1.5 whitespace-nowrap"
               >
-                <span>Merchant Admin Portal</span>
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span>Admin Portal</span>
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
               </a>
             </nav>
 
             {/* Right Action Buttons */}
-            <div className="hidden md:flex items-center gap-3">
+            <div className="hidden md:flex items-center gap-2 lg:gap-3">
               <a
                 href="/admin"
-                className="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors"
+                className="px-3 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors whitespace-nowrap"
               >
-                Merchant Sign In
+                Sign In
               </a>
               <button
                 onClick={() => setIsRegisterOpen(true)}
-                className="relative inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white rounded-xl bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 shadow-lg shadow-indigo-500/25 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
+                className="relative inline-flex items-center gap-1.5 px-4 py-2 text-sm font-semibold text-white rounded-xl bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 shadow-lg shadow-indigo-500/25 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
               >
                 <span>Create Store</span>
                 <ArrowRight className="w-4 h-4" />

@@ -1,4 +1,5 @@
 import { Store, Globe, MessageSquare, Share2, Shield } from "lucide-react";
+import { AIAnthroLogo } from "./AIAnthroLogo";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -8,12 +9,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 pb-12 border-b border-white/10">
           <div className="col-span-2 space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center font-bold text-white text-sm shadow-md">
-                <Store className="w-4 h-4" />
-              </div>
-              <span className="text-lg font-bold text-white font-sans">AIAnthro Store SaaS</span>
-            </div>
+            <AIAnthroLogo size="md" />
             <p className="text-xs text-slate-400 max-w-sm leading-relaxed">
               The next-generation enterprise all-in-one e-commerce SaaS platform. Launch, scale, and manage global online stores from one unified operating system.
             </p>
