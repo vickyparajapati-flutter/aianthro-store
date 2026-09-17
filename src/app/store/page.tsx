@@ -38,7 +38,7 @@ export default function LiveStorefrontPage() {
   const storesData = {
     aura: {
       name: "Aura Luxury Studio",
-      slug: "aura-studio.aianthrostore.shop",
+      slug: "aura-studio.shop.aianthro.com",
       badge: "Luxury Tech & Apparel",
       bgGradient: "from-indigo-950 via-[#0d111a] to-slate-900",
       accent: "#6366f1",
@@ -88,7 +88,7 @@ export default function LiveStorefrontPage() {
     },
     nexustech: {
       name: "Nexus Pro Electronics",
-      slug: "nexustech.aianthrostore.shop",
+      slug: "nexustech.shop.aianthro.com",
       badge: "Professional Gear & Cameras",
       bgGradient: "from-cyan-950 via-[#09111c] to-slate-900",
       accent: "#06b6d4",
@@ -138,7 +138,7 @@ export default function LiveStorefrontPage() {
     },
     verdeliving: {
       name: "Verde Lifestyle & Footwear",
-      slug: "verdeliving.aianthrostore.shop",
+      slug: "verdeliving.shop.aianthro.com",
       badge: "Sustainable Goods & Fashion",
       bgGradient: "from-emerald-950 via-[#0a1412] to-slate-900",
       accent: "#10b981",
