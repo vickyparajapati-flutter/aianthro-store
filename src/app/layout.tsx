@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description:
       "Everything you need to build, manage, and scale high-converting online stores globally.",
     type: "website",
-    url: "https://aianthrostore.io",
+    url: "https://shop.aianthro.com",
   },
   twitter: {
     card: "summary_large_image",

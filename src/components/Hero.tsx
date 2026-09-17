@@ -101,8 +101,8 @@ export function Hero() {
                   <div className="w-3 h-3 rounded-full bg-amber-500/80" />
                   <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
                 </div>
-                <div className="flex items-center gap-2 px-4 py-1 rounded-lg bg-white/5 border border-white/5 text-xs text-slate-400 font-mono w-1/2 sm:w-1/3 justify-center">
-                  <span className="text-indigo-400 font-semibold">https://</span>app.aianthrostore.io/admin
+                <div className="flex items-center gap-2 px-4 py-1.5 rounded-lg bg-white/5 border border-white/5 text-xs text-slate-300 font-mono w-full sm:w-auto px-6 justify-center">
+                  <span className="text-emerald-400 font-semibold">https://</span>shop.aianthro.com/admin
                 </div>
                 <div className="text-xs text-emerald-400 font-semibold">Store Engine Active</div>
               </div>
